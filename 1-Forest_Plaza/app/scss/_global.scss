@@ -1,0 +1,41 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	color: white;
+	background-color: #0B1D26;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	min-width: 320px;
+	max-width: 1920px;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+	font-size: 45px;
+	margin-bottom: 27px;
+	font-weight: 400;
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #1C1C1D;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 320px;
+  max-width: 1920px;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #1C1C1D;
+  box-shadow: 0 4px 0 #202020;
+  border-radius: 10px;
+  transition: all .2s;
+  height: 50px;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.45px;
+  color: #1C1C1D;
+  text-align: center;
+  font-style: normal;
+  line-height: 100%;
+}
+.button:hover {
+  background-color: #afe5e5;
+  box-shadow: 0 1px 0 #202020;
+  transform: translateY(3px);
+}
+
+
+.appstore-icon-black:before {
+  background-image: url(../images/app-store-icon.png);
+}
+.playmarket-icon-black:before {
+  background-image: url(../images/play-market-icon.png);
+}
+.appstore-icon-white:before {
+  background-image: url(../images/app-store-icon-white.png);
+}
+.playmarket-icon-white:before  {
+  background-image: url(../images/play-market-icon-white.png);
+}
+
+
+.title {
+  font-family: 'Balsamiq Sans', cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 48px;
+}
+.text {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.30px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 0 25px;
+  }
+  button {
+    background-color: #7711DD;
+    border: 2px solid #7711DD;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+  }
+  li.slick-active {
+    button {
+      background-color: #FA6648;
+    }
+  }
+}

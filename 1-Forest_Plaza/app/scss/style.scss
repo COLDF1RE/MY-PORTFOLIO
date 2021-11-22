@@ -1,0 +1,436 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header__bg-gradient {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 99%);
+  z-index: 0;
+}
+
+.header {
+  background-image: url(../images/header-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  position: relative;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    min-height: 610px;
+    height: 95vh;
+    z-index: 2;
+    background-color: rgba(black, .5);
+    border-radius: 10%;
+    max-width: 700px;
+    margin: 20px auto 0;
+  }
+  &__logo {
+    width: 260px;
+    height: 260px;
+    margin: auto 0 20px;
+  }
+  &__subtitle {
+    color: #FBD784;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 60px;
+    padding: 0 10px;
+  }
+  &__title span {
+    display: block;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+  }
+  &__social {
+    margin-top: -20px;
+  }
+  &__phone {
+    cursor: pointer;
+    font-size: 30px;
+
+  }
+  &__button {
+    margin-top: 35px;
+    margin-bottom: auto;
+  }
+}
+
+.logo {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid white;
+  padding: 5px 15px 0 15px;
+  transition: fill 0.7s;
+  background-color: white;
+  color: #0B1D26;
+  z-index: 1;
+  &__path {
+    transition: fill 0.7s;
+    fill: #a9a32a;
+  }
+  &:hover {
+
+  }
+  &:hover &__path {
+    fill: #a9a32a;
+  }
+  &__text {
+    display: inline-block;
+    transform: translateY(-20px);
+    margin-left: -56px;
+  }
+}
+
+.social {
+  display: flex;
+  &__item {
+    margin: 0 10px;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  &__link {
+    margin: 0 5px;
+  }
+}
+
+.cottages {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 0 50px;
+}
+.cottages-card {
+  border-radius: 5px;
+  width: 430px;
+  height: 640px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(#000, .92);
+    z-index: 2;
+  }
+  &__arrow {
+    position: absolute;
+    top:41%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("../images/arrow.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  &__arrow-prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  &__arrow-next {
+    right: 0;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  &__img span {
+    z-index: 4;
+  }
+  &__img-1,
+  &__img-1 span{
+    background-image: url(../images/cottages-card-1.webp);
+  }
+  &__img-2,
+  &__img-2 span{
+    background-image: url(../images/cottages-card-2.webp)
+  }
+  &__img-3,
+  &__img-3 span{
+    background-image: url(../images/cottages-card-3.webp)
+  }
+  &__img-4,
+  &__img-4 span{
+    background-image: url(../images/cottages-card-4.webp)
+  }
+  &__img span {
+    width: 25%;
+    height: 100%;
+    transition: .5s;
+  }
+  &__img span:nth-child(1) {
+    background-position: 0;
+  }
+  &__img span:nth-child(2) {
+    background-position: 33.33333%;
+    transition-delay: .1s;
+  }
+  &__img span:nth-child(3) {
+    background-position: 66.66666%;
+    transition-delay: .2s;
+  }
+  &__img span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: .3s;
+  }
+  &__content {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px 40px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 3;
+  }
+  &__content-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+  }
+  &__content-subtitle {
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+  &__content-price {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__content-text {
+    margin-bottom: 30px;
+    text-indent: 30px;
+    border-bottom: 1px solid #FBD784;
+    padding-bottom: 30px;
+  }
+  &__content-button {
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+.cottages-card:hover {
+  .cottages-card__img > span {
+    transform: translateY(-100%);
+  }
+  .cottages-card__content {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: .1s;
+  }
+}
+
+.description {
+  background-color: #C4C4C4;
+  color: black;
+  text-align: center;
+  &__inner {
+    padding: 70px 0 100px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    text-indent: 15px;
+  }
+  &__content-text:first-child {
+    margin-right: 20px;
+  }
+}
+
+.services {
+  padding-top: 80px;
+  &__inner {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  &__content {
+    margin: 110px 20px 150px 110px;
+  }
+  &__content-subtitle {
+    color: #FBD784;
+    padding-left: 100px;
+    position: relative;
+  }
+  &__content-subtitle:before {
+    font-size: 200px;
+    font-weight: 700;
+    position: absolute;
+    left: -120px;
+    color: rgba(105, 105, 105, 0.54);
+    font-family: 'Oswald', sans-serif;
+    top: -140px;
+  }
+  &__inner:nth-child(1) &__content-subtitle:before {
+    content: '01'
+  }
+  &__inner:nth-child(2) &__content-subtitle:before {
+    content: '02'
+  }
+  &__inner:nth-child(3) &__content-subtitle:before {
+    content: '03'
+  }
+  &__content-subtitle:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 72px;
+    background-color: #FBD784;
+    left: 0;
+    top: 10px;
+  }
+  &__content-title {
+    margin-bottom: 27px;
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  &__content-text {
+    margin-bottom: 15px;
+    max-width: 600px;
+  }
+  &__content-link {
+    color: #FBD784;
+  }
+  &__img {
+    width: 550px;
+    padding: 30px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 69% 31% 23% 77% / 66% 51% 49% 34%;
+  }
+}
+.services__inner:nth-child(2) .services__img {
+  order: -1;
+  border-radius: 31% 69% 77% 23% / 51% 66% 34% 49%;
+}
+
+.contact {
+  background-image: url("../images/forest.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__inner {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgba(black, .5);
+  }
+  &__subtitle {
+    color: #FBD784;
+    line-height: 27px;
+  }
+  &__text {
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  &__form {
+    color: #fff;
+    padding: 50px 0 57px;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  &__input {
+    background-color: transparent;
+    width: 450px;
+    height: 75px;
+    color: white;
+    border: 1px solid #fff;
+    margin-bottom: 12px;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  &__input::placeholder {
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #c4c4c4;
+  }
+  &__button {
+    margin: 20px 0 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+  }
+}
+
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+  }
+  &__logo {
+    width: 200px;
+  }
+  &__social{
+    padding: 20px 0;
+  }
+  &__privacy {
+    cursor: pointer;
+    padding: 20px 0;
+  }
+}
+
+
+@import 'media';

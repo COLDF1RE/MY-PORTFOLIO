@@ -1,0 +1,143 @@
+@media (orientation:portrait) {
+  .start__text-container--showSecond .start__letter-item{
+    font-size: calc(1rem + 24vmin);
+  }
+}
+@media (orientation:landscape) {
+  .start__text-container--showSecond .start__letter-item{
+    font-size: calc(1rem + 25vmax);
+  }
+}
+
+@media (max-width: 1615px) {
+  .instagram__img:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .lookbook__rightside-title{
+    width: 500px;
+  }
+  .shop__categories--active {
+    flex: 9999;
+  }
+}
+
+@media (max-width: 1050px) {
+  .content__sale {
+    margin-right: 25px;
+  }
+  .lookbook__rightside-title{
+    font-size: 45px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .start__text-container--showFirst{
+    width: 620px;
+    font-size: 135px;
+  }
+  .lookbook {
+    height: 750px;
+  }
+  .lookbook__rightside-text {
+    margin: 145px 0 20px;
+  }
+  .lookbook__rightside-title{
+    font-size: 40px;
+    width: 360px;
+  }
+}
+
+@media (max-width: 750px) {
+  .start__text-container--showFirst{
+    width: 450px;
+    font-size: 100px;
+  }
+  .lookbook__leftside{
+    display: none;
+  }
+  .lookbook__rightside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .shop__categories {
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 30px 5px 5px 5px;
+  }
+  .shop__categories::before {
+    transform: rotate(0);
+    left: 25px;
+    bottom: auto;
+    top: 5px;
+    width: auto;
+  }
+  .shop__inner{
+    flex-direction: column;
+    height: 550px;
+  }
+  .shop__categories--active {
+    flex: 9999;
+  }
+}
+
+@media (max-width: 600px) {
+  .start__text-container--showFirst{
+    width: 362px;
+    font-size: 80px;
+  }
+  .content__inner {
+    flex-wrap: wrap;
+  }
+  .content__blog{
+    width: 100%;
+  }
+  .content__sale {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .instagram{
+    padding: 75px 0 75px;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer__form-input{
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .start__text-container--showFirst{
+    width: 300px;
+    font-size: 67px;
+  }
+  .start__bgc-item:last-child{
+    display: none;
+  }
+  .lookbook {
+    height: 670px;
+  }
+  .lookbook__rightside-text{
+    margin: 100px 0 20px;
+  }
+  .lookbook__rightside-title{
+    font-size: 35px;
+    width: 315px;
+  }
+  .footer {
+    padding-top: 75px;
+  }
+  .footer__form-input{
+    width: 180px;
+  }
+}
