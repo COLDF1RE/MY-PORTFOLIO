@@ -86,8 +86,8 @@ $(function () {
                                     <h2 class="hello__subtitle">Разработчик</h2>
                                 </div>
                                 <ul class="social">                                                                                          
-                                    <li class="social__img"><a href="https://t.me/COLDF1RE" class=""><img src="./images/telegram.webp" alt="" class=""></a></li>
-                                    <li class="social__img"><a href="https://www.instagram.com/coldfire0" class=""><img src="./images/instagram.webp" alt="" class=""></a></li>
+                                    <li class="social__img"><a href="https://t.me/Vladimir_Boyarkin_S_LOG_SPB" class=""><img src="./images/telegram.webp" alt="" class=""></a></li>
+                                    <!--<li class="social__img"><a href="https://www.instagram.com/coldfire0" class=""><img src="./images/instagram.webp" alt="" class=""></a></li>-->
                                     <li class="social__img"><a href="https://github.com/COLDF1RE" class=""><img src="./images/github.webp" alt="" class=""></a></li>
                                     <li class="social__img"><a href="mailto:v.boiarkin.gmail.com"><img src="./images/mail.webp" alt="" class=""></a>
                                     </li>
@@ -146,6 +146,9 @@ $(function () {
                                         <li>◌ jQuery</li>                                    
                                         <li>◌ JavaScript</li>
                                         <li>◌ React</li>
+                                        <li>◌ MobX</li>
+                                        <li>◌ Vue</li>
+                                        <li>◌ Vuex</li>
                                         <li>◌ Git, github</li>
                                     </ul>
                                 </div>
@@ -160,6 +163,8 @@ $(function () {
                                         <li>◌ Ableton Live</li>
                                         <li>◌ VSCode</li>
                                         <li>◌ Webstorm</li>
+                                        <li>◌ GitKraken</li>
+                                        <li>◌ Sourcetree</li>
                                     </ul>
                                 </div>
                             </div>
@@ -205,8 +210,8 @@ $(function () {
                                     <ul class="contacts__text">
                                         <li><a class="" href=""></a>+7 (952) 352-43-17</li>
                                         <li><a class="" href="mailto:v.boiarkin.gmail.com">v.boiarkin.gmail.com</a></li>
-                                        <li><a class="" href="https://t.me/COLDF1RE">Telegram</a></li>
-                                        <li><a class="" href="https://www.instagram.com/coldfire0/">Instagram</a></li>
+                                        <li><a class="" href="https://t.me/Vladimir_Boyarkin_S_LOG_SPB">Telegram</a></li>
+                                        <!--<li><a class="" href="https://www.instagram.com/coldfire0/">Instagram</a></li>-->
                                         <li><a class="" href="https://github.com/COLDF1RE">GitHub</a></li>                                     
                                     </ul>
                                 </div>
